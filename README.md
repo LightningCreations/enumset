@@ -12,6 +12,8 @@ See [the documentation](https://docs.rs/enumset) for more information.
 
 # License
 
+This project has been modified in source form by Connor Horman for Lightning Creations
+
 This project is licensed under either of
 
  * Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or

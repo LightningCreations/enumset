@@ -257,6 +257,7 @@ pub unsafe trait EnumSetType: Copy + Eq + EnumSetTypePrivate { }
 /// In addition, the `#[enumset(serialize_as_list)]` attribute causes the `EnumSet` to be
 /// instead serialized as a list of enum variants. This requires your enum type implement
 /// [`Serialize`] and [`Deserialize`]. Note that this is a breaking change
+#[repr(transparent)] /// FFI Patch: allow EnumSet<T> as emplacement for T::Repr
 #[derive(Copy, Clone, PartialEq, Eq)]
 pub struct EnumSet<T: EnumSetType> {
     #[doc(hidden)]
